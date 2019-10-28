@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 5</title>
+</head>
+<body>
+  <form>
+    <label for="lastName">Nom : </label><input type="text" name="lastName" id="lastName" />
+    <label for="firstName">Prénom : </label><input type="text" name="firstName" id="firstName" />
+    <button type="button" name="button">Envoyer</button>
+  </form>
+
+  <script type="text/javascript" src='assets/lib/jquery-3.4.1.min.js'></script>
+  <script>
+    $('input').focus(function(){
+      $(this).css('border','1px solid green');
+    });
+    $('input').blur(function(){
+      $(this).css('border','1px solid red');
+    });
+
+  </script>
+</body>
+</html>
